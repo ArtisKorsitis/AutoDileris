@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('All Cars') }}
+            {{ __('messages.All Cars') }}
         </h2>
     </x-slot>
 
@@ -17,7 +17,7 @@
                     
                     @can('is-admin')
                     <x-nav-link :href="route('car.create')">
-                        {{ __('ADD A NEW CAR') }}
+                        <x-button>{{ __('messages.ADD A NEW CAR') }}</x-button>
                     </x-nav-link>
                     @endcan
                 </div>
